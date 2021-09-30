@@ -1,0 +1,123 @@
+@import "@/assets/vars.scss";
+@import "@/assets/inputs.scss";
+body, html {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: normal;
+    font-size: .875rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  textarea {
+    resize: none;
+  }
+  section {
+    position: relative;
+  }
+  input,
+  select,
+  button,
+  textarea {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    outline: none;
+    color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  img {
+    max-width: 100%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn-default {
+    transition: all .3s ease;
+    cursor: pointer;
+    padding: 8px;
+    background: $blue;
+    color: $baseWhite;
+    min-width: 100px;
+    border-radius: 6px;
+    &:hover {
+        transform: translateY(-3px);
+    }
+    &.featured {
+      background: $lightBlue;
+      color: $baseBlack;
+    }
+}
+.form__item .vue-tags-input {
+    max-width: 100%;
+    .ti-input {
+        border-radius: 6px;
+    }
+    .ti-tag {
+        background: $blue;
+    }
+}
+.mx-datepicker {
+    width: 100%;
+}
+.error {
+    border-color: $red;
+    .ti-input {
+        border-color: $red;
+    }
+}
+.invalid {
+    color: $red;
+}
+.completed {
+  color: lightGray;
+}
